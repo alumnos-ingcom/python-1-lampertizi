@@ -9,8 +9,10 @@ PRE: un n° entero
 POST: un valor booleano
 """
 
-
 def es_primo(numero):
+    """
+    Devuelve un bool indicando si el n° es primo o no
+    """
     count = 1
     divisores = []
 
@@ -25,8 +27,11 @@ def es_primo(numero):
         return False
 
 def principal():
-    x = int(input("Ingrese un n° positivo: "))
-    resultado = es_primo(x)
+    """
+    Ésta es la función que interactúa con el usuario
+    """
+    num = int(input("Ingrese un n° positivo: "))
+    resultado = es_primo(num)
     print(resultado) 
 
 if __name__ == "__main__":
