@@ -32,8 +32,11 @@ def es_palindromo(texto):
         return False
 
 def principal():
-    x = input("Ingrese frase posiblemente palindrómica: ")
-    resultado = es_palindromo(x)
+    """
+    Ésta es la función que interactúa con el usuario
+    """
+    frase = input("Ingrese frase posiblemente palindrómica: ")
+    resultado = es_palindromo(frase)
     print(resultado)
 
 if __name__ == "__main__":
