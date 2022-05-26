@@ -12,6 +12,9 @@ POST: tupla con todos los divisores primos del n° ingresado
 """
 
 def factores_primos(numero):
+    """
+    Encuentra múltiplos primos del n° ingresado
+    """
     n_primos = []
     count = 1
     while count <= numero:    # se obtienen los n° primos hasta el n° pedido
@@ -36,8 +39,11 @@ def factores_primos(numero):
     return tuple(factores)
 
 def principal():
-    x = int(input("Ingrese un n° positivo: "))
-    resultado = factores_primos(x)
+    """
+    Ésta es la función que interactúa con el usuario
+    """
+    num = int(input("Ingrese un n° positivo: "))
+    resultado = factores_primos(num)
     print(resultado)
 
 
