@@ -27,7 +27,7 @@ def suma_lenta(numero, otro_numero):
             numero = numero + 1
             count = count - 1
         veces_sumadas = " + 1" * otro_numero
-        return f"{temporal}" + veces_sumadas, f"= {numero}"
+        return f"{temporal}{veces_sumadas} = {numero}"
 
     elif signo(otro_numero) == "negativo":
 
@@ -37,10 +37,10 @@ def suma_lenta(numero, otro_numero):
 
         veces_restadas = " - 1" * abs(otro_numero)
 
-        return f"{temporal}" + veces_restadas, f"= {numero}"
+        return f"{temporal}{veces_restadas} = {numero}"
 
     else:
-        return f"{numero} + 0 = {numero}"
+        return f"{numero} + {otro_numero} = {numero}"
 
 def principal():
     """
