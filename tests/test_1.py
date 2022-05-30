@@ -1,5 +1,5 @@
 ################
-# Nombre - @usuario_github
+# Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 from src.ejercicio1 import celsius_a_fahrenheit, fahrenheit_a_celsius
@@ -17,7 +17,7 @@ def test_fahrenheit():
         fahrenheit_a_celsius(32.49)
         fahrenheit_a_celsius(0)
     except:
-        print "error en la conversion de F° a C°"
+        print("error en la conversion de F° a C°")
 
 def test_celsius():
     """
@@ -28,12 +28,11 @@ def test_celsius():
         celsius_a_fahrenheit(41.65)
         celsius_a_fahrenheit(0)
     except:
-        print "error en la conversion de C° a F°"
+        print ("error en la conversion de C° a F°")
 
 def test_general():
     """
     se ingresará una función dentro de otra, esperando obtener el resultado ingresado
     """
-    if celsius_a_fahrenheit(fahrenheit_a_celsius(32)) != 32:
-        raise ValorIncoherente("No funciona la conversión")
-
+    assert celsius_a_fahrenheit(fahrenheit_a_celsius(32)) == 32, "no funciona la conversión"
+    

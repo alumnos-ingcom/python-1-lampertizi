@@ -1,5 +1,5 @@
 ################
-# Nombre - @usuario_github
+# Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
