@@ -30,7 +30,7 @@ def division_lenta(dividendo,divisor):
     
     if verificador != dividendo:
         count = temp
-    return f"cociente = {cociente} \nresto = {abs(count)}"
+    return cociente,count
     
 def principal():
     """
@@ -40,8 +40,8 @@ def principal():
     dividendo = int(input("Ingrese el dividendo: "))
     divisor = int(input("Ingrese el divisor: "))
 
-    resultado = division_lenta(dividendo,divisor)
-    print(resultado)
+    cociente,resto = division_lenta(dividendo,divisor)
+    print(f"cociente = {cociente}\nresto = {resto}")
 
 if __name__ == "__main__":
     principal()
