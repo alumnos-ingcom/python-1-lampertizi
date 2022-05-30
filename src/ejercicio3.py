@@ -1,4 +1,5 @@
-################ # Tiziano Lamperti - @lampertizi
+################
+# Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
@@ -18,7 +19,7 @@ def compara(numero, otro_numero):
     """
     Determina la igualdad o desigualdad entre 2 valores dados
     """
-    if numero - otro_numero == 0:
+    if numero + (-otro_numero) == 0:
         return 0
     elif numero - otro_numero > 0:
         return 1
