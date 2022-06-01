@@ -14,4 +14,3 @@ def test_division_lenta():
     assert division_lenta(18,2) == (9,0),"error en la división con resto cero"
     assert division_lenta(18,5) == (3,3), "error en la division con resto != de cero" 
     assert division_lenta(15,0) == ZeroDivisionError,"puede dividir por cero O_o"
-    assert division_lenta(-10,2) == (-5,0),"error en la división de n° negativos"
