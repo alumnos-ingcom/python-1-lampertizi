@@ -12,23 +12,19 @@ def test_fahrenheit():
     """
     se insertarán valores negativos, 0 y float
     """
-    try:
-        fahrenheit_a_celsius(-15)
-        fahrenheit_a_celsius(32.49)
-        fahrenheit_a_celsius(0)
-    except:
-        print("error en la conversion de F° a C°")
+    res2 = 0.27222222222222336
+    res3 = -17.77777777777778
+    assert fahrenheit_a_celsius(-4) == -20.0, "no funciona con n° negativos"
+    assert fahrenheit_a_celsius(32.49) == res2, "no funciona con floats"
+    assert fahrenheit_a_celsius(0) == res3, "no detecta al cero"
 
 def test_celsius():
     """
     se insertarán valores negativos,0 y float
     """
-    try:
-        celsius_a_fahrenheit(-79)
-        celsius_a_fahrenheit(41.65)
-        celsius_a_fahrenheit(0)
-    except:
-        print ("error en la conversion de C° a F°")
+    assert celsius_a_fahrenheit(-5) == 23, "no funciona con n° negativos"
+    assert celsius_a_fahrenheit(41.65) == 106.97, "no funciona con floats"
+    assert celsius_a_fahrenheit(0) == 32.0, "no detecta al cero"
 
 def test_general():
     """
