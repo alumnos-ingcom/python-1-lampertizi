@@ -12,6 +12,9 @@ PRE: de 1 a 3 valores enteros
 POST: su respectiva conversión
 """
 def sexagesimal_a_segundos(grados,minutos,segundos):
+    
+    assert grados or minutos or segundos > 0, "no existe el tiempo negativo"
+    
     """
     Convierte de grados minutos y segundos a segundos
     """
@@ -24,6 +27,7 @@ def segundos_a_sexagesimal(segundos):
     """
     Convierte los segundos a grados sexagesimales
     """
+    assert segundos > 0, "no existe el tiempo negativo"
     grados = 0
     minutos = 0
     seconds = 0
