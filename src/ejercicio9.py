@@ -17,16 +17,18 @@ def factores_primos(numero):
     """
     n_primos = []
     count = 1
-    while count <= numero:    # se obtienen los n° primos hasta el n° pedido
+    while count <= abs(numero):    # se obtienen los n° primos hasta el n° pedido
         if es_primo(count):
             n_primos.append(count)
         count = count + 1 
 
-    count = 0                 # 
-    temp = numero             # 
-    factores = []             # lista final de factores primos
-
-
+    count = 0                       # 
+    temp = abs(numero)              #
+    if numero < 0:                  #
+        factores = [-1]             # lista final de factores primos para n° negativos
+    else:
+        factores = []               #
+    
     while temp > 1:
         factor_primo = n_primos[count]
 
@@ -35,7 +37,7 @@ def factores_primos(numero):
             factores.append(factor_primo)
         else:                        
             count = count + 1 # pasa al siguiente n° primo
-
+    
     return tuple(factores)
 
 def principal():
