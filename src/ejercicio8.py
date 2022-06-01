@@ -22,9 +22,9 @@ def es_primo(numero):
         count = count + 1
 
     if len(divisores) == 2:
-       return True 
-    else:
-        return False
+       return True
+    
+    return False
 
 def principal():
     """
