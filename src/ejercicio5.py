@@ -15,22 +15,25 @@ def division_lenta(dividendo,divisor):
     """
     Calcula el cociente y resto entre 2 n° mediante restas sucesivas
     """
-    count = dividendo
+    assert divisor != 0, "no se puede dividir por cero jefe"
+    
+    count = abs(dividendo)
     cociente = 0
     
-    while count > 1:
-        if (count - divisor) < 0:
-            temp = count
-            count = count - divisor
-        else:
-            count = count - divisor
-            cociente = cociente + 1
+    while count >= 1:
+        count = count - abs(divisor)
+        cociente = cociente + 1
     
-    verificador = cociente * divisor + abs(count)
+    if count < 0:
+        cociente = cociente + count
+        count = abs(count)
     
-    if verificador != dividendo:
-        count = temp
-    return cociente,count
+    if dividendo < 0 or divisor < 0:
+        verificador = cociente * abs(divisor) + count
+        if verificador == abs(dividendo):
+            return (-cociente,count)
+        
+    return(cociente,count)
     
 def principal():
     """
