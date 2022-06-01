@@ -2,6 +2,7 @@
 # Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+from src.ejercicio10 import es_palindromo
 
 """
 se probará la función que detecta frases/palabras palindrómicas
@@ -16,8 +17,7 @@ def test_palindromico():
     frase3 = "como andás jefe"
     frase4 = "ComOMOC"
 
-    assert frase1 == True, "no detecta frases palindromicas"
-    assert frase2 == True, "no detecta palabras palindromicas"
-    assert frase3 == False, "no detecta frases no palindromicas"
-    assert frase4 == True, "es case sensitive"
-
+    assert es_palindromo(frase1) is True, "no detecta frases palindromicas"
+    assert es_palindromo(frase2) is True, "no detecta palabras palindromicas"
+    assert es_palindromo(frase3) is False, "no detecta frases no palindromicas"
+    assert es_palindromo(frase4) is True, "es case sensitive"
