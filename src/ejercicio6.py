@@ -6,7 +6,7 @@
 """
 Escribir una función que a partir de tres variables de tipo entero retorne
 una tupla con dichos valores ordenados de menor a mayor. Y Viceversa
-PRE: 3 n° enteros 
+PRE: 3 n° enteros
 
 POST: los 3 n° ordenados
 """

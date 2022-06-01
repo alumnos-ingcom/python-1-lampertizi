@@ -22,8 +22,7 @@ def es_primo(numero):
         count = count + 1
 
     if len(divisores) == 2:
-       return True
-    
+        return True
     return False
 
 def principal():
@@ -32,7 +31,7 @@ def principal():
     """
     num = int(input("Ingrese un n° positivo: "))
     resultado = es_primo(num)
-    print(resultado) 
+    print(resultado)
 
 if __name__ == "__main__":
     principal()

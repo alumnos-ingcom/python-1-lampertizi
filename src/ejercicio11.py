@@ -6,7 +6,7 @@ from ejercicio5 import division_lenta
 """
 Escribir una función que indique con True si un número entero es multiplo de otro,
 utilizando sumas y restas.
-PRE: n° entero 
+PRE: n° entero
 
 POST: valor booleano
 """
@@ -17,10 +17,9 @@ def es_multiplo(numero,multiplo):
     """
     if multiplo == 0:
         return False
-    else:
-        cociente, resto = division_lenta(numero,multiplo)
-        if resto != 0:
-            return False
+    cociente, resto = division_lenta(numero,multiplo)
+    if resto != 0:
+        return False
 
     return True
 

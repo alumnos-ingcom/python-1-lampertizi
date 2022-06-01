@@ -4,7 +4,7 @@
 ################
 
 """
-Escribir un programa que permita transformar un número solicitado expresado en 
+Escribir un programa que permita transformar un número solicitado expresado en
 grados, minutos y segundos a segundos.
 Y otra que haga el cambio en el sentido contrario, devolviendo una tuple.
 PRE: de 1 a 3 valores enteros
@@ -12,12 +12,10 @@ PRE: de 1 a 3 valores enteros
 POST: su respectiva conversión
 """
 def sexagesimal_a_segundos(grados,minutos,segundos):
-    
-    assert grados or minutos or segundos > 0, "no existe el tiempo negativo"
-    
     """
     Convierte de grados minutos y segundos a segundos
     """
+    assert grados or minutos or segundos > 0, "no existe el tiempo negativo"
     grados = grados * 3600
     minutos = minutos * 60
     cuenta = grados + minutos + segundos
@@ -46,9 +44,7 @@ def principal():
     Ésta función es la que interactúa con el usuario.
     """
     segundos = int(input("Cuántos segundos se quieren transformar?: "))
-
     resultado = segundos_a_sexagesimal(segundos)
-
     print(resultado)
 
     grados = int(input("grados a convertir: "))
@@ -60,4 +56,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-    
