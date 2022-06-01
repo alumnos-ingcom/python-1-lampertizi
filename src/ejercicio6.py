@@ -16,7 +16,22 @@ def menor_a_mayor(val1,val2,val3):
     Ordena 3 n° de menor a mayor
     """
     numbers = []
-
+    
+    if val1 is val2 and val1 < val3:
+        numbers.append(val1)
+        numbers.append(val2)
+        numbers.append(val3)
+    
+    if val1 is val3 and val1 < val2:
+        numbers.append(val1)
+        numbers.append(val3)
+        numbers.append(val2)
+    
+    if val2 is val3 and val2 < val1:
+        numbers.append(val2)
+        numbers.append(val3)
+        numbers.append(val1)
+                
     if val1 < val2 and val1 < val3:
         numbers.append(val1)
 
@@ -26,7 +41,7 @@ def menor_a_mayor(val1,val2,val3):
         else:
             numbers.append(val3)
             numbers.append(val2)
-    elif val2 < val1 and val2 <val3:
+    elif val2 < val1 and val2 < val3:
         numbers.append(val2)
 
         if val1 < val3:
@@ -50,7 +65,7 @@ def mayor_a_menor(val1,val2,val3):
     Ordena 3 n° de mayor a menor
     """
     numbers = []
-
+    
     if val1 > val2 and val1 > val3:
         numbers.append(val1)
 
