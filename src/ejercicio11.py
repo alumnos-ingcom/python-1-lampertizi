@@ -15,9 +15,12 @@ def es_multiplo(numero,multiplo):
     """
     Mediante 2 n° evalúa si el 2do es múltiplo del 1ero
     """
-    cociente, resto = division_lenta(numero,multiplo)
-    if resto != 0:
+    if multiplo == 0:
         return False
+    else:
+        cociente, resto = division_lenta(numero,multiplo)
+        if resto != 0:
+            return False
 
     return True
 
