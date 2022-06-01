@@ -2,7 +2,7 @@
 # Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-from ejercicio8 import es_primo
+from src.ejercicio8 import es_primo
 """
 Escribir una función que retorne una tuple con factores primos de un numero entero positivo.
 PRE: un n° entero positivo
