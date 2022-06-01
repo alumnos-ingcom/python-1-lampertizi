@@ -2,7 +2,7 @@
 # Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-from ejercicio5 import division_lenta
+from src.ejercicio5 import division_lenta
 """
 Escribir una función que indique con True si un número entero es multiplo de otro,
 utilizando sumas y restas.
