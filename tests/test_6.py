@@ -2,7 +2,7 @@
 # Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-from src.ejercicio import menor_a_mayor, mayor_a_menor
+from src.ejercicio6 import menor_a_mayor, mayor_a_menor
 
 """
 se probarán las funciones que ordenan de mayor a menor y viceversa
