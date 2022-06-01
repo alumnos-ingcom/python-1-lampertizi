@@ -11,6 +11,6 @@ def test_primo():
     """
     se introducirán n° positivos no primos, primos, y negativos
     """
-    assert es_primo(10) == False, "no calcula correctamente ante n° positivos no primos"
-    assert es_primo(-7) == False, "no calcula correctamente n° negativos"
-    assert es_primo(97) == True, "no calcula correctamente primos"
+    assert es_primo(10) is False, "no calcula correctamente ante n° positivos no primos"
+    assert es_primo(-7) is False, "no calcula correctamente n° negativos"
+    assert es_primo(97) is True, "no calcula correctamente primos"
