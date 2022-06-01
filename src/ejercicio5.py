@@ -22,8 +22,9 @@ def division_lenta(dividendo,divisor):
         count = count - abs(divisor)
         cociente = cociente + 1
     if count < 0:
+        cociente = cociente + 1
         cociente = cociente + count
-        count = abs(count)
+        count = abs(count) + 1
     if dividendo < 0 or divisor < 0:
         verificador = cociente * abs(divisor) + count
         if verificador == abs(dividendo):
