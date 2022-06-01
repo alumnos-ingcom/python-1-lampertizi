@@ -2,7 +2,7 @@
 # Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-from ejercicio2 import signo
+from src.ejercicio2 import signo
 
 """
 Escribir una función que haga la suma entre dos números enteros
